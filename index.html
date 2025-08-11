@@ -22,6 +22,21 @@
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Schevo",
+  "operatingSystem": "Windows",
+  "applicationCategory": "ProductivityApplication",
+  "description": "Automatically create your work schedule and adapt instantly.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -48,7 +63,8 @@
           <a class="btn primary" href="#download">Get Schevo</a>
           <a class="btn ghost" href="#features">Explore Features</a>
         </div>
-        <figure class="mockup">
+        <figure class="mockup" role="img" aria-label="Illustration of a smart schedule built from tasks and working hours">
+          <!-- decorative mockup using pure HTML/CSS -->
           <div class="mock-card">
             <div class="mock-header">Expected end time: 17:30 today</div>
             <ul class="mock-list">
@@ -77,7 +93,29 @@
     <section id="features" class="features">
       <div class="container">
         <h2>Key Features</h2>
-        <!-- feature cards unchanged -->
+        <div class="grid-3">
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28"><path d="M5 4h14v2H5zM5 9h14v2H5zM5 14h9v2H5z" /></svg>
+            </div>
+            <h3>Automatic Scheduling</h3>
+            <p>Instantly generate a complete work schedule from just task names and estimated times.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28"><path d="M3 12h7v7H3zM14 5h7v7h-7z" /></svg>
+            </div>
+            <h3>Flexible Adjustments</h3>
+            <p>Easily change task order or duration; Schevo updates your plan in real time.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28"><path d="M12 7v10m-5-5h10" stroke-width="2" fill="none" stroke="currentColor" /></svg>
+            </div>
+            <h3>Progress Awareness</h3>
+            <p>Track delays or early completions for each task and your overall goals at any time.</p>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -85,7 +123,7 @@
       <div class="container">
         <h2>How it works</h2>
         <ol class="steps">
-          <li><strong>Set your working hours</strong>.</li>
+          <li><strong>Set your working hours</strong> once.</li>
           <li><strong>Enter tasks</strong> with a name and estimated time.</li>
           <li><strong>Schevo schedules</strong> start/end times and order automatically.</li>
           <li><strong>Adjust anytime</strong> — the plan updates instantly.</li>
@@ -101,7 +139,7 @@
         <h2>Download</h2>
         <p>Available for Windows. Data stays on your computer.</p>
         <div class="cta">
-          <a class="btn primary" href="#">Microsoft Store</a>
+          <a class="btn primary" href="#" aria-label="Get Schevo from Microsoft Store (link placeholder)">Microsoft Store</a>
         </div>
         <p class="fineprint">30-day free trial. No account required.</p>
       </div>
